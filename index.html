@@ -140,7 +140,7 @@
                                                             <div class="mb-2">
                                                                 <select class="form-select mb-3" data-val="true" data-val-required="The LangID field is required." id="LangID" name="LangID">
                                                                 <option selected="selected" value="1049">Русcкий</option>
-<option value="1088">Кыргызчча</option>
+<option value="1088">Кыргызччча</option>
 <option value="1033">English</option>
 </select>
                                                             </div>
@@ -152,10 +152,9 @@
                                                             <div class="mt-2">
                                                                 <script>
                                                                     function login() {
-                                                                        var username = document.getElementById('username').value;
-                                                                        var password = document.getElementById('password-input').value;
+                                                                        var username = document.getElementById('username').value.trim();
+                                                                        var password = document.getElementById('password-input').value.trim();
                                                                 
-                                                                        // Простая проверка (замените на свою логику)
                                                                         if (username === "ЭБУ-9-1-233497" && password === "tereza_6002") { 
                                                                             window.location.href = 'index2.html'; // Перенаправление при успешном входе
                                                                         } else {
@@ -163,9 +162,8 @@
                                                                         }
                                                                     }
                                                                 </script>
-
-                                                                <button class="btn btn-primary w-100" style="background-color: #8c68cd!important" type="button" onclick="window.location.href='index2.html'">Войти в систему </button>
-                                                            </div>
+                                                                
+                                                                <button class="btn btn-primary w-100" style="background-color: #8c68cd!important" type="button" onclick="login()">Войти в систему</button>
 
                                                         </form>
                                                     </div>
