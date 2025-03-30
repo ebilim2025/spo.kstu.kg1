@@ -150,6 +150,20 @@
                                                             </div>
 
                                                             <div class="mt-2">
+                                                                <script>
+                                                                    function login() {
+                                                                        var username = document.getElementById('username').value;
+                                                                        var password = document.getElementById('password-input').value;
+                                                                
+                                                                        // Простая проверка (замените на свою логику)
+                                                                        if (username === "admin" && password === "1234") { 
+                                                                            window.location.href = 'index2.html'; // Перенаправление при успешном входе
+                                                                        } else {
+                                                                            alert("Неверный логин или пароль!"); // Сообщение об ошибке
+                                                                        }
+                                                                    }
+                                                                </script>
+
                                                                 <button class="btn btn-primary w-100" style="background-color: #8c68cd!important" type="button" onclick="window.location.href='index2.html'">Войти в систему </button>
                                                             </div>
 
